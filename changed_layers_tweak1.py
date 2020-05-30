@@ -130,8 +130,8 @@ print('Test accuracy:', scores[1])
 
 accuracy = scores[1]
 
-f = open("accuracy","r")
-prev_accuracy = f.read()
+f = open("accuracy.txt","r")
+prev_accuracy = int(f.read())
 f.close()
 # In[ ]:
 

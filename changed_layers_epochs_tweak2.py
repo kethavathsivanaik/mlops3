@@ -147,8 +147,9 @@ print('Test accuracy:', scores[1])
 
 
 accuracy = scores[1]
-prev_accuracy = 0
-
+f = open("accuracy.txt","r")
+prev_accuracy = int(f.read())
+f.close()
 # changed the epochs ....
 for i in range(5):
     if accuracy < prev_accuracy:

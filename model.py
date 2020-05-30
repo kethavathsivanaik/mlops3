@@ -139,7 +139,7 @@ accuracy
 
 # In[23]:
 
-
+os.system("touch accuracy.txt")
 f = open("accuracy.txt", "w")
 f.write("{0}".format(accuracy))
 f.close()

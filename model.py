@@ -13,6 +13,7 @@ from keras.regularizers import l2
 from keras.datasets import mnist
 from keras.utils import np_utils
 import keras
+import os
 
 # loads the MNIST dataset
 (x_train, y_train), (x_test, y_test)  = mnist.load_data()

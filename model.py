@@ -104,7 +104,7 @@ accuracy=float(scores[1])
 f = open("accuracy.txt", "w+")
 f.write("{0}".format(accuracy))
 f.close()
-print(f"accuracy {accuracy1}%")
+print(f"accuracy {accuracy}%")
 if accuracy > 0.9:
 	model.save("model_1st.h5")
 

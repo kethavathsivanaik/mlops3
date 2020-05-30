@@ -135,22 +135,6 @@ if accuracy > 0.9
 	model.save("model_t2_1.h5")
 	exit()
 
-
-# In[ ]:
-
-
-
-
-
-# In[ ]:
-
-
-
-
-
-# In[ ]:if 
-
-
 f = open("accuracy.txt","r")
 prev_accuracy = int(f.read())
 f.close()

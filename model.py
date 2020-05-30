@@ -100,76 +100,12 @@ history = model.fit(x_train, y_train,
 scores = model.evaluate(x_test, y_test, verbose=1)
 print('Test loss:', scores[0])
 print('Test accuracy:', scores[1])
-#os.system("touch accuracy.txt")
-accuracy=float(scores[1]*100)
-
-print(f"accuracy {accuracy}%")
-
-f = open("accuracy.txt", "w")
+accuracy=float(scores[1])
+f = open("accuracy.txt", "w+")
 f.write("{0}".format(accuracy))
 f.close()
-# In[ ]:
-
+print(f"accuracy {accuracy1}%")
 if accuracy > 0.9:
 	model.save("model_1st.h5")
-
-
-
-# In[8]:
-
-
-
-
-
-# In[9]:
-
-
-accuracy
-
-
-# In[ ]:
-
-
-
-
-
-# In[10]:
-
-
-accuracy
-
-
-# In[ ]:
-
-
-
-
-
-# In[23]:
-
-
-
-
-# In[ ]:
-
-
-
-
-
-# In[ ]:
-
-
-
-
-
-# In[ ]:
-
-
-
-
-
-# In[ ]:
-
-
 
 

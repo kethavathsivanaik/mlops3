@@ -110,7 +110,8 @@ f.write("{0}".format(accuracy))
 f.close()
 # In[ ]:
 
-
+if accuracy > 0.9:
+	model.save("model_1st.h5")
 
 
 

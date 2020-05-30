@@ -140,6 +140,7 @@ if accuracy > prev_accuracy:
 	f.write("{0}".format(accuracy))
 	f.close()
 elif accuracy > 0.98:
+	model.save(model_t1.h5)
     print("The mode train Finished..")
 
 # In[ ]:

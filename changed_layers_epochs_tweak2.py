@@ -125,28 +125,32 @@ print('Test loss:', scores[0])
 print('Test accuracy:', scores[1])
 
 
-# In[ ]:
-
-
-
-
 
 # In[ ]:
 
-
-
-
-
-# In[ ]:
-
-
-
-
-
-# In[ ]:
 
 
 accuracy = scores[1]
+if accuracy > 0.9
+	model.save("model_t2_1.h5")
+	exit()
+
+
+# In[ ]:
+
+
+
+
+
+# In[ ]:
+
+
+
+
+
+# In[ ]:if 
+
+
 f = open("accuracy.txt","r")
 prev_accuracy = int(f.read())
 f.close()
@@ -156,7 +160,7 @@ for i in range(5):
         print("Stopped the model Training .. Your Accuracy is decreasing")
         break
         
-    elif accuracy < 98 :
+    elif accuracy < 0.9 :
         # Training Parameters
         batch_size = 128
         epochs =+3
@@ -176,7 +180,8 @@ for i in range(5):
         prev_accuracy = accuracy
         accuracy = scores[1]
     else :
-        model.save("mnist.h5")
+        model.save("model_t2_2.h5")
+        exit()
 
 
 # In[ ]:

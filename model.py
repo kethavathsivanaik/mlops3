@@ -101,7 +101,11 @@ scores = model.evaluate(x_test, y_test, verbose=1)
 print('Test loss:', scores[0])
 print('Test accuracy:', scores[1])
 
-
+#os.system("touch accuracy.txt")
+accuracy = scores[1]
+f = open("accuracy.txt", "w")
+f.write("{0}".format(accuracy))
+f.close()
 # In[ ]:
 
 
@@ -111,7 +115,7 @@ print('Test accuracy:', scores[1])
 # In[8]:
 
 
-accuracy = scores[1]
+
 
 
 # In[9]:
@@ -140,10 +144,7 @@ accuracy
 
 # In[23]:
 
-os.system("touch accuracy.txt")
-f = open("accuracy.txt", "w")
-f.write("{0}".format(accuracy))
-f.close()
+
 
 
 # In[ ]:

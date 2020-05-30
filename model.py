@@ -86,7 +86,7 @@ print(model.summary())
 
 # Training Parameters
 batch_size = 128
-epochs = 3
+epochs = 1
 
 history = model.fit(x_train, y_train,
           batch_size=batch_size,
@@ -100,12 +100,12 @@ history = model.fit(x_train, y_train,
 scores = model.evaluate(x_test, y_test, verbose=1)
 print('Test loss:', scores[0])
 print('Test accuracy:', scores[1])
-accuracy=float(scores[1])
+accuracy=str(scores[1])
 f = open("accuracy.txt", "w+")
 f.write("{0}".format(accuracy))
 f.close()
 print(f"accuracy {accuracy}%")
-if accuracy > 0.9:
+if scores[1] > 0.9:
 	model.save("model_1st.h5")
 
 
